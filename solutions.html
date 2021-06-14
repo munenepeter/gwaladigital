@@ -17,37 +17,33 @@
 
 <body>
     <!-- Start NavBar -->
-    <nav class="lg:px-20 md:px-14 px-4 py-2 sticky top-0 bg-yellow-500">
-        <div class="flex justify-between">
-            <div class="log0">
-                Gwala Digital
-            </div>
-            <div class="flex items-center">
-                <a href="index.html"
-                    class="flex items-center justify-center mr-4 lg:mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out">
-                    Home
-                </a>
-                <a href="about.html"
-                    class="hidden lg:flex items-center justify-center mr-4 lg:mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out">
-                    About
-                </a>
-                <a href="solutions.html"
-                    class="hidden lg:flex items-center justify-center mr-4 lg:mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out">
-                    Solutions
-                </a>
-                <a href="pricing.html"
-                    class="hidden lg:flex items-center justify-center mr-4 lg:mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out">
-                    Pricing
-                </a>
-                <!-- Might make it a button -->
-                <a href="hire-us.html"
-                    class="hidden lg:flex items-center justify-center mr-4 lg:mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out">
-                    Hire Us
-                </a>
-                <!-- end of call to action button -->
-            </div>
+    
+    <header class="text-gray-600 body-font sticky top-0 bg-yellow-500">
+        <div class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class=" rounded-lg w-10 h-10 text-white p-2 bg-yellow-200"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+                <span class="ml-3 text-xl hidden lg:block">Gwala Digital</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+                <a href="about.html" class="mr-5 hover:text-gray-900">About</a>
+                <a href="solutions.html" class="mr-5 hover:text-gray-900">Solutions</a>
+                <a href="pricing.html" class="mr-5 hover:text-gray-900">Pricing</a>
+            </nav>
+            <button
+                class="hidden md:inline-flex  lg:inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Hire
+                Us
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </button>
         </div>
-    </nav>
+    </header>
     <!-- End Navbar -->
     <!-- ********************************************************************************************** -->
     <!-- Start Banner -->
@@ -81,7 +77,7 @@
         style="background-image: url('https://images.pexels.com/photos/3183127/pexels-photo-3183127.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');">
         <h2 class="pt-8 mb-8 text-4xl font-bold leading-none text-center">Our Solutions</h2>
         <!-- First Item in the Line -->
-        <div class="first-item bg-yellow-100 ">
+        <div class="first-item bg-gradient-to-r from-yellow-200  to-yellow-400 bg-opacity-75 ">
             <div class="container block lg:flex justify-around p-6">
                 <div
                     class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-4 lg:px-8 lg:py-16   text-gray-800   ">
@@ -230,7 +226,7 @@
         <!-- End of first Item in the Line -->
         <!-- **************************************************** -->
         <!-- Second Item in the Line -->
-        <div class="second-item bg-yellow-200">
+        <div class="second-item bg-gradient-to-r from-yellow-300  to-yellow-500 bg-opacity-75">
 
             <div class="container block lg:flex justify-around p-6">
                 <div
@@ -239,7 +235,7 @@
                     <h2 class="lg:mb-8 mb-2 text-4xl font-bold leading-none lg:text-center">Digital Marketing</h2>
                     <div class="lg:mt-4 hidden lg:inline-flex md:inline-flex">
                         <a
-                            class=" md:px-4 px-4 py-2 md:-ml-1   w-40 text-center font-semibold rounded-full border-2  border-yellow-500 text-yellow-600">Get
+                            class="inline-flex px-4 py-2 ml-12 w-40 text-center font-semibold rounded-full border-2  border-yellow-500 text-yellow-600">Get
                             Service
                             <svg xmlns="http://www.w3.org/2000/svg" class=" mt-1 ml-2 -mr-1 h-5 w-5" viewBox="0 0 20 20"
                                 fill="currentColor">
@@ -343,7 +339,7 @@
         </div>
         </div>
 
-        <div class="third-item bg-yellow-300">
+        <div class="third-item  bg-gradient-to-r from-yellow-400  to-yellow-600 bg-opacity-75">
 
             <div class="container block lg:flex justify-around p-6">
                 <div
@@ -352,7 +348,7 @@
                     <h2 class="lg:mb-8 mb-2 text-4xl font-bold leading-none lg:text-center">Website Design</h2>
                     <div class="lg:mt-4 hidden lg:inline-flex md:inline-flex">
                         <a
-                            class="inline-flex px-4 py-2 ml-12 w-40 text-center font-semibold rounded-full border-2  border-yellow-500 text-yellow-600">Get
+                            class="inline-flex px-4 py-2 ml-12 w-40 text-center font-semibold rounded-full border-2  border-yellow-200 text-yellow-200">Get
                             Service
                             <svg xmlns="http://www.w3.org/2000/svg" class=" mt-1 ml-2 -mr-1 h-5 w-5" viewBox="0 0 20 20"
                                 fill="currentColor">
@@ -404,7 +400,7 @@
                     </ul>
                     <div class="mt-4 lg:hidden md:hidden">
                         <a
-                            class="inline-flex px-4 py-2 ml-2 w-40 text-center font-semibold rounded-full border-2  border-yellow-500 text-yellow-600">Get
+                            class="inline-flex px-4 py-2 ml-2 w-40 text-center font-semibold rounded-full border-2  border-yellow-200 text-yellow-200">Get
                             Service
                             <svg xmlns="http://www.w3.org/2000/svg" class=" mt-1 ml-2 -mr-1 h-5 w-5" viewBox="0 0 20 20"
                                 fill="currentColor">
@@ -418,7 +414,7 @@
             </div>
         </div>
         </div>
-        <div class="fourth-item bg-yellow-400 ">
+        <div class="fourth-item bg-gradient-to-r from-yellow-500  to-yellow-700 bg-opacity-75 ">
             <div class="container block lg:flex justify-around p-6">
                 <div
                     class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8   text-gray-800   ">
@@ -426,7 +422,7 @@
                     <h2 class="lg:mb-8 mb-2 text-4xl font-bold leading-none lg:text-center">Mobile Apps Development </h2>
                     <div class="lg:mt-4 hidden lg:inline-flex md:inline-flex">
                         <a
-                            class="inline-flex px-4 py-2 ml-28 w-40 text-center font-semibold rounded-full border-2  border-yellow-500 text-yellow-600">Get
+                            class="inline-flex px-4 py-2 ml-28 w-40 text-center font-semibold rounded-full border-2  border-yellow-300 text-yellow-300">Get
                             Service
                             <svg xmlns="http://www.w3.org/2000/svg" class=" mt-1 ml-2 -mr-1 h-5 w-5" viewBox="0 0 20 20"
                                 fill="currentColor">
@@ -478,7 +474,7 @@
                     </ul>
                     <div class="mt-4 lg:hidden md:hidden">
                         <a
-                            class="inline-flex px-4 py-2 ml-2 w-40 text-center font-semibold rounded-full border-2  border-yellow-500 text-yellow-600">Get
+                            class="inline-flex px-4 py-2 ml-2 w-40 text-center font-semibold rounded-full border-2  border-yellow-300 text-yellow-300">Get
                             Service
                             <svg xmlns="http://www.w3.org/2000/svg" class=" mt-1 ml-2 -mr-1 h-5 w-5" viewBox="0 0 20 20"
                                 fill="currentColor">
