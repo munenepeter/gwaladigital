@@ -12,6 +12,7 @@
     <meta name="author" content="Peter Munene">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gwala Digital - Bridging Now & The Future</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"></script>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
@@ -29,7 +30,7 @@
         </a>
         <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
-            <a href="about.html" class="mr-5 hover:text-gray-900">About</a>
+            <a href="pricing.html" class="mr-5 hover:text-gray-900">About</a>
             <div @click.away="open = false" class="mr-5  relative" x-data="{ open: false }">
                 <a @click="open = !open"
                     class="flex flex-row items-center text-sm font-semibold text-left  rounded-lg  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 ">
@@ -106,21 +107,54 @@
 
     <!-- End Navbar -->
     <div class="flex items-center justify-center h-screen bg-gray-200">
-        <div class="container">
-            <div class="bg-white rounded-lg shadow-lg p-5 md:p-20 mx-2">
+        <div class=" ">
+            <div class="bg-white rounded-lg shadow-lg p-2 md:p-20 mx-2">
                 <div class="text-center">
                     <h2
-                        class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+                        class="text-2xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                         Gwala<span class="text-yellow-600">Digital</span>
                     </h2>
-                    <h3 class='text-xl md:text-3xl mt-10'>Coming Soon</h3>
+                    <h3 class='text-xl tracking-loose  md:text-3xl mt-6'>Coming Soon</h3>
+                    <p class="mt-4 font-extrabold text-green-600 text-xl" id="demo"></p>
+                   
                     <p class="text-md md:text-xl mt-10"><a class="hover:underline"
-                            href="#">Gwala Digital/pricing</a> This page is under construction. <br> Please come back latter</p>
+                            href="#">Gwala Digital </a> is under construction. <br> Please come back later</p>
                 </div>
              
             </div>
         </div>
     </div>
     
+    
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jun 25, 2021 22:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + " days " + hours + "hrs "
+                + minutes + "min " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
