@@ -21,16 +21,17 @@
     <header class="text-gray-600 body-font sticky top-0 bg-yellow-500">
         <div class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
             <a class="hidden lg:flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <svg xmlns="http://www.w3.org/2000/svg" class=" rounded-lg w-10 h-10 text-white p-2 bg-yellow-200"
+                <img class="w-32 h-16" src="assets/GwalaLogo.svg" alt="Gwala Digital Logo">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" class=" rounded-lg w-10 h-10 text-white p-2 bg-yellow-200"
                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                </svg>
-                <span class="ml-3 text-xl ">Gwala Digital</span>
+                </svg> -->
+
             </a>
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
                 <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
-                <a href="pricing.html" class="mr-5 hover:text-gray-900">About</a>
+                <a href="about.html" class="mr-5 hover:text-gray-900">About</a>
                 <div @click.away="open = false" class="mr-5  relative" x-data="{ open: false }">
                     <a @click="open = !open"
                         class="flex flex-row items-center text-sm font-semibold text-left  rounded-lg  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 ">
@@ -49,35 +50,43 @@
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
                         class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-                        <div class="px-2 py-2 bg-yellow-400 rounded-md shadow ">
-                            <a class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
+                        <div class="w-40 lg:w-auto md:w-auto lg:px-2 py-2 bg-yellow-400 rounded-md shadow ">
+                            <a class="flex flex-inline items-center hover:bg-yellow-200 px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
                                 href="#">
-                              <span>Branding</span>
-                            
-                        <svg xmlns="http://www.w3.org/2000/svg"  class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                        </svg>
-                            </a>
-                            <a class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
-                                href="#">
-                                <span>Digital Marketing</span>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                                </svg></a>
-                            <a class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
-                                href="#">
-                                <span>Website Design</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                <span>Branding</span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7l5 5m0 0l-5 5m5-5H6" />
                                 </svg>
                             </a>
-                            <a class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
+                            <a class="flex flex-inline items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
+                                href="#">
+                                <span>Digital Marketing</span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg></a>
+                            <a class="flex flex-inline items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
+                                href="#">
+                                <span>Web Design</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                            </a>
+                            <a class="flex flex-inline items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
                                 href="#">
                                 <span>Mobile Apps Development</span>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ml-1" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7l5 5m0 0l-5 5m5-5H6" />
                                 </svg></a>
                         </div>
                     </div>
@@ -92,7 +101,7 @@
                     class="w-4 h-4 ml-1 animate-ping" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-            </button>
+            </a>
         </div>
     </header>
 
@@ -100,7 +109,7 @@
     <!-- End Navbar -->
     <!-- ********************************************************************************************** -->
     <!-- Start Hero Section -->
-    <header class=" h-full flex justify-between w-full bg-gray-600 bg-cover bg-blend-overlay"
+    <header class="h-full flex justify-between w-full bg-gray-600 bg-cover bg-blend-overlay"
         style="background-image: url('https://images.pexels.com/photos/3183127/pexels-photo-3183127.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');">
         <!-- Main div -->
         <div class="lg:2/6 xl:w-2/4 mt-8 lg:mb-28 lg:mt-28  lg:ml-12 lg:text-left text-center  items-center">
@@ -127,7 +136,7 @@
     <!-- ********************************************************************************************** -->
     <!-- Start Our Solutions Section -->
     <!-- Start Our Solutions Section -->
-    <section class="bg-yellow-600   bg-opacity-75">
+    <section class="bg-yellow-600 bg-opacity-75">
         <div class="container max-w-xl lg:p-6 py-12 lg:px-8 lg:max-w-7xl">
             <div class="text-center">
                 <div class="flex">
@@ -280,72 +289,72 @@
                 </h1>
             </div>
         </div>
-       
+
 
 
         <div class="bg-yellow-300 pt-2">
-                <div class="container mx-auto grid grid-cols-1 gap-8 lg:gap-20 md:px-10 md:pb-10 lg:grid-cols-2 ">
-                    <div class="flex flex-col items-center max-w-lg mx-12 lg:mx-0">
-                        <div class="  text-center"> 
-                            <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
-                                text
-                                Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                                text
-                                Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                                text
-                            </p>
+            <div class="container mx-auto grid grid-cols-1 gap-8 lg:gap-20 md:px-10 md:pb-10 lg:grid-cols-2 ">
+                <div class="flex flex-col items-center max-w-lg mx-12 lg:mx-0">
+                    <div class="  text-center">
+                        <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                        </p>
 
-                        </div>
-                        <span class="w-12 h-1 my-2 rounded-lg bg-yellow-600"></span>
-                        <p>Demo Client</p>
                     </div>
-                    <div class="flex flex-col items-center max-w-lg mx-12 lg:mx-0">
-                        <div class=" text-center">
-
-                            <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
-                                text
-                                Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                                text
-                                Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                                text
-                            </p>
-
-                        </div>
-                        <span class="w-12 h-1 my-2 rounded-lg bg-yellow-600"></span>
-                        <p>Demo Client</p>
-                    </div>
-                    <div class="flex flex-col items-center max-w-lg mx-12 lg:mx-0">
-                        <div class="  text-center">
-
-                            <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
-                                text
-                                Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                                text
-                                Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                                text
-                            </p>
-
-                        </div>
-                        <span class="w-12 h-1 my-2 rounded-lg bg-yellow-600"></span>
-                        <p>Demo Client</p>
-                    </div>
-                    <div class="flex flex-col items-center max-w-lg mx-12 lg:mx-0">
-                        <div class="  text-center">
-
-                            <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
-                                text
-                                Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                                text
-                                Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                                text
-                            </p>
-
-                        </div>
-                        <span class="w-12 h-1 my-2 rounded-lg bg-yellow-600"></span>
-                        <p>Demo Client</p>
-                    </div>
+                    <span class="w-12 h-1 my-2 rounded-lg bg-yellow-600"></span>
+                    <p>Demo Client</p>
                 </div>
-            </div> 
+                <div class="flex flex-col items-center max-w-lg mx-12 lg:mx-0">
+                    <div class=" text-center">
+
+                        <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                        </p>
+
+                    </div>
+                    <span class="w-12 h-1 my-2 rounded-lg bg-yellow-600"></span>
+                    <p>Demo Client</p>
+                </div>
+                <div class="flex flex-col items-center max-w-lg mx-12 lg:mx-0">
+                    <div class="  text-center">
+
+                        <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                        </p>
+
+                    </div>
+                    <span class="w-12 h-1 my-2 rounded-lg bg-yellow-600"></span>
+                    <p>Demo Client</p>
+                </div>
+                <div class="flex flex-col items-center max-w-lg mx-12 lg:mx-0">
+                    <div class="  text-center">
+
+                        <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                        </p>
+
+                    </div>
+                    <span class="w-12 h-1 my-2 rounded-lg bg-yellow-600"></span>
+                    <p>Demo Client</p>
+                </div>
+            </div>
+        </div>
 
     </section>
     <!-- End Our Solutions Section -->
