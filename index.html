@@ -14,6 +14,66 @@
     <title>Gwala Digital - Bridging Now & The Future</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"></script>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .mySlides {
+            display: none;
+        }
+
+        .dot {
+            height: 2px;
+            width: 25px;
+            margin: 0 2px;
+            background-color: rgba(245,158,11, 0.5); 
+            display: inline-block;
+            transition: width 2s linear 1s;
+            transition-timing-function: ease-in-out;
+            /* transition: background-color 0.6s ease; */
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 3.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                left: 100px;
+                opacity: .4
+            }
+
+            to {
+                left: 0px;
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                left: 0px;
+                opacity: .4
+            }
+
+            to {
+                left: -200px;
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -134,50 +194,40 @@
     </header>
     <!-- End Hero Section -->
     <!-- ********************************************************************************************** -->
-    <!-- Start Our Solutions Section -->
-    <!-- Start Our Solutions Section -->
-    <!-- <section class="bg-yellow-600 bg-opacity-75">
-        <div class="container max-w-xl lg:p-6 py-12 lg:px-8 lg:max-w-7xl">
-            <div class="text-center">
-                <div class="flex">
-                    <div class="ml-4">
-                        <h4 class="text-3xl text-white  font-bold leading-6  ">
-                            About Us</h4>
-                        <p class="mt-6 font-medium text-white  leading-snug lg:leading-loose">
-                            </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+
     <!-- End About us-->
     <!-- ********************************************************************************************** -->
     <section class=" bg-yellow-100 text-gray-600 body-font">
         <div class="container px-2 py-16 mx-auto">
             <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-                About Us
+                    About Us
                 </h1>
-                <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">We are an all-round digital agency with our team bringing onboard a cumulative of over 15
-                years in the digital marketing industry. Our result orientation is hinged on applying a
-                fusion of emerging technology and analyzed strategic marketing options. We offer services
-                that help our clients to leverage their span of customers, audience, or followers. We are
-                immersed in brands, focused on strategy, and driven by results. We bridge the future with
-                now.</p>
+                <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">We are an all-round digital agency with our
+                    team bringing onboard a cumulative of over 15
+                    years in the digital marketing industry. Our result orientation is hinged on applying a
+                    fusion of emerging technology and analyzed strategic marketing options. We offer services
+                    that help our clients to leverage their span of customers, audience, or followers. We are
+                    immersed in brands, focused on strategy, and driven by results. We bridge the future with
+                    now.</p>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 p-2"> 
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 p-2">
                 <div class="p-4 ">
-                    <div class="border border-red-200 p-6 rounded-lg bg-gradient-to-r from-yellow-200  to-yellow-400 bg-opacity-75">
-                        <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                    <div
+                        class="border border-red-200 p-6 rounded-lg bg-gradient-to-r from-yellow-200  to-yellow-400 bg-opacity-75">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                             <img src="assets/Webdesign.svg" alt="Webdesign Icon">
                         </div>
                         <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Branding</h2>
-                        <p class="leading-relaxed text-base">We revamp your Business Name, Make your tagline catchy, create/recreate your logo, create
-                        your
-                        artistic business cards & flyers, give your brand a unique pattern & letterhead, create your
-                        custom envelope design, your social media covers, an email signature, and more.</p>
+                        <p class="leading-relaxed text-base">We revamp your Business Name, Make your tagline catchy,
+                            create/recreate your logo, create
+                            your
+                            artistic business cards & flyers, give your brand a unique pattern & letterhead, create your
+                            custom envelope design, your social media covers, an email signature, and more.</p>
                         <div class="mt-4">
-                            <a class="inline-flex px-4 py-2  w-36 text-center font-semibold rounded-full bg-yellow-500 text-gray-100">Get
+                            <a
+                                class="inline-flex px-4 py-2  w-36 text-center font-semibold rounded-full bg-yellow-500 text-gray-100">Get
                                 Service
                                 <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 ml-2 h-5 w-5" viewBox="0 0 20 20"
                                     fill="currentColor">
@@ -190,16 +240,20 @@
                     </div>
                 </div>
                 <div class=" p-4">
-                    <div class="border border-gray-200 p-6 rounded-lg bg-gradient-to-r from-yellow-200  to-yellow-400 bg-opacity-75">
-                        <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                    <div
+                        class="border border-gray-200 p-6 rounded-lg bg-gradient-to-r from-yellow-200  to-yellow-400 bg-opacity-75">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                             <img src="assets/DigitalMrkt.svg" alt="Digital Marketing Icon">
                         </div>
                         <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Digital Marketing</h2>
-                        <p class="leading-relaxed text-base">We creatively take your brand ONLINE by efficiently manage your social media, create
-                        engaging content, use influencers for your business, optimize (SEO) it, send promotional
-                        emails, create campaigns & do advertising on your behalf.</p>
+                        <p class="leading-relaxed text-base">We creatively take your brand ONLINE by efficiently manage
+                            your social media, create
+                            engaging content, use influencers for your business, optimize (SEO) it, send promotional
+                            emails, create campaigns & do advertising on your behalf.</p>
                         <div class="mt-4">
-                            <a class="inline-flex px-4 py-2  w-36 text-center font-semibold rounded-full bg-yellow-500 text-gray-100">Get
+                            <a
+                                class="inline-flex px-4 py-2  w-36 text-center font-semibold rounded-full bg-yellow-500 text-gray-100">Get
                                 Service
                                 <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 ml-2 h-5 w-5" viewBox="0 0 20 20"
                                     fill="currentColor">
@@ -212,16 +266,20 @@
                     </div>
                 </div>
                 <div class=" p-4">
-                    <div class="border border-gray-200 p-6 rounded-lg bg-gradient-to-r from-yellow-200  to-yellow-400 bg-opacity-75">
-                        <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-white mb-4"> 
-                            <img src="assets/Webdesign.svg" alt="Webdesign Icon"> 
+                    <div
+                        class="border border-gray-200 p-6 rounded-lg bg-gradient-to-r from-yellow-200  to-yellow-400 bg-opacity-75">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-white mb-4">
+                            <img src="assets/Webdesign.svg" alt="Webdesign Icon">
                         </div>
                         <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Website Design</h2>
-                        <p class="leading-relaxed text-base">We will design a user responsive website for your business, we will maintain it and provide
-                        support services, we shall host it for you, and we will buy a domain for you, update your
-                        content regularly, do analytics and bring leads through your website.</p>
+                        <p class="leading-relaxed text-base">We will design a user responsive website for your business,
+                            we will maintain it and provide
+                            support services, we shall host it for you, and we will buy a domain for you, update your
+                            content regularly, do analytics and bring leads through your website.</p>
                         <div class="mt-4">
-                            <a class="inline-flex px-4 py-2  w-36 text-center font-semibold rounded-full bg-yellow-500 text-gray-100">Get
+                            <a
+                                class="inline-flex px-4 py-2  w-36 text-center font-semibold rounded-full bg-yellow-500 text-gray-100">Get
                                 Service
                                 <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 ml-2 h-5 w-5" viewBox="0 0 20 20"
                                     fill="currentColor">
@@ -234,15 +292,17 @@
                     </div>
                 </div>
                 <div class=" p-4">
-                    <div class="border border-gray-200 p-6 rounded-lg bg-gradient-to-r from-yellow-200  to-yellow-400 bg-opacity-75">
+                    <div
+                        class="border border-gray-200 p-6 rounded-lg bg-gradient-to-r from-yellow-200  to-yellow-400 bg-opacity-75">
                         <div
                             class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                             <img src="assets/MobileAppDev.svg" alt="MobileAppDev Icon">
                         </div>
                         <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Mobile Apps Development</h2>
-                        <p class="leading-relaxed text-base">We create a seamless mobile that gives your users ease in accessing your products and
-                        services at the same time you get a safe place where all your business data is stored that
-                        can be used in strategy formulation and future prediction.  </p>
+                        <p class="leading-relaxed text-base">We create a seamless mobile that gives your users ease in
+                            accessing your products and
+                            services at the same time you get a safe place where all your business data is stored that
+                            can be used in strategy formulation and future prediction. </p>
                         <div class="mt-4">
                             <a
                                 class="inline-flex px-4 py-2  w-36 text-center font-semibold rounded-full bg-yellow-500 text-gray-100">Get
@@ -259,82 +319,141 @@
                 </div>
             </div>
             <button
-                class="flex mx-auto mt-10 text-white bg-yellow-500 border-0 py-2 px-10 focus:outline-none hover:bg-yellow-600 rounded text-lg">Get All</button>
+                class="flex mx-auto mt-10 text-white bg-yellow-500 border-0 py-2 px-10 focus:outline-none hover:bg-yellow-600 rounded text-lg">Get
+                All</button>
         </div>
-    </section> 
+    </section>
     <!-- End Our Solutions Section -->
     <!-- ********************************************************************************************** -->
     <!-- What our customers are saying about us -->
     <section class="bg-yellow-200">
         <div class="bg-yellow-200">
-            <div class="container mx-auto flex flex-col items-center pb-6   md:p-10 md:px-12 ">
+            <div class="container mx-auto pt-6 md:p-6 md:px-8 text-center ">
                 <h1 class="text-4xl font-semibold leading-none text-center">What our customers are saying about us
                 </h1>
+                <span class=" inline-block h-1 w-52 rounded bg-yellow-500 mt-8"></span>
             </div>
         </div> 
-        <div class="bg-yellow-300 pt-2">
-            <div class="container mx-auto grid grid-cols-1 gap-8 lg:gap-20 md:px-10 md:pb-10 lg:grid-cols-2 ">
-                <div class="flex flex-col items-center max-w-lg mx-12 lg:mx-0">
-                    <div class="  text-center">
-                        <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
-                            text
-                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                            text
-                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                            text
-                        </p>
-
-                    </div>
-                    <span class="w-12 h-1 my-2 rounded-lg bg-yellow-600"></span>
-                    <p>Demo Client</p>
+        <div class="text-gray-600 ">
+            <div class="container px-5 py-8 mx-auto">
+                <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center mySlides fade"> 
+                    <p class="leading-relaxed text-lg">Demo text Demo text Demo text Demo text Demo text Demo
+                    text
+                    Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                    text
+                    Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                    text</p>
+                    <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Demo Client1</h2> 
                 </div>
-                <div class="flex flex-col items-center max-w-lg mx-12 lg:mx-0">
-                    <div class=" text-center">
-
-                        <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
-                            text
-                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                            text
-                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                            text
-                        </p>
-
-                    </div>
-                    <span class="w-12 h-1 my-2 rounded-lg bg-yellow-600"></span>
-                    <p>Demo Client</p>
+                <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center mySlides fade">
+                    <p class="leading-relaxed text-lg">Demo text Demo text Demo text Demo text Demo text Demo
+                    text
+                    Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                    text
+                    Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                    text</p>
+                    <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Demo Client2</h2> 
                 </div>
-                <div class="flex flex-col items-center max-w-lg mx-12 lg:mx-0">
-                    <div class="  text-center">
-
-                        <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
-                            text
-                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                            text
-                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                            text
-                        </p>
-
-                    </div>
-                    <span class="w-12 h-1 my-2 rounded-lg bg-yellow-600"></span>
-                    <p>Demo Client</p>
+                <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center mySlides fade">
+                    <p class="leading-relaxed text-lg">Demo text Demo text Demo text Demo text Demo text Demo
+                        text
+                        Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                        text
+                        Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                        text</p>
+                    <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Demo Client3</h2>
                 </div>
-                <div class="flex flex-col items-center max-w-lg mx-12 lg:mx-0">
-                    <div class="  text-center">
-
-                        <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
-                            text
-                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                            text
-                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                            text
-                        </p>
-
-                    </div>
-                    <span class="w-12 h-1 my-2 rounded-lg bg-yellow-600"></span>
-                    <p>Demo Client</p>
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
             </div>
         </div>
+        <!-- <div class="mx-16 h-72 ">
+            <div class="container mx-auto text-center p-2 ">
+                <div class="p-4lg:w-1/2 w-full mySlides fade">
+                    <div class="h-full p-8 rounded">
+                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                            carry neutra
+                            before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic
+                            heirloom
+                            try-hard pabst authentic iceland.</p>
+                        <a class="inline-flex items-center"> <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                                <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="p-4lg:w-1/2 w-full mySlides fade">
+                    <div class="h-full  p-8 rounded"> 
+                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                            carry neutra
+                            before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic
+                            heirloom
+                            try-hard pabst authentic iceland.</p>
+                        <a class="inline-flex items-center"> <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                                <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="mx-12 lg:mx-0 mySlides fade">
+                    <div class="text-center">
+                        <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                        </p>
+
+                    </div>
+                    <span class="w-12 h-1 my-2 rounded-lg bg-yellow-600"></span>
+                    <p>Demo Client2</p>
+                </div>
+                <div class="mx-12 lg:mx-0 mySlides fade">
+                    <div class="text-center">
+                        <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                        </p>
+
+                    </div>
+                    <span class="w-12 h-1 my-2 rounded-lg bg-yellow-800"></span>
+                    <p>Demo Client3</p>
+                </div>
+                <div class="mx-12 lg:mx-0 mySlides fade">
+                    <div class="text-center">
+                        <p class="px-6 py-1 text-lg italic">Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                            Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                            text
+                        </p>
+
+                    </div>
+                    <span class="w-12 h-1 my-2 rounded-lg bg-yellow-600"></span>
+                    <p>Demo Client4</p>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div> -->
 
     </section>
     <!-- End Our Solutions Section -->
@@ -401,13 +520,13 @@
             </div>
         </div>
         <div class="text-gray-100 body-font sm:border-t-2 sm:border-gray-200">
-            <div class="container px-5 py-4 mx-auto flex items-center sm:flex-row flex-col"> 
+            <div class="container px-5 py-4 mx-auto flex items-center sm:flex-row flex-col">
                 <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4  sm:py-2 sm:mt-0 mt-4">© 2021
-                    Gwala Digital | All rights reserved 
+                    Gwala Digital | All rights reserved
                 </p>
                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                     <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4  sm:py-2 sm:mt-0 mt-4">
-                        Privacy Policy 
+                        Privacy Policy
                     </p>
                 </span>
             </div>
