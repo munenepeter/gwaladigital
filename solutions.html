@@ -142,12 +142,12 @@
                     <div
                         class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
                         <div @click.away="open = false" class="mr-5" x-data="{ open: false }">
-                            <div class="flex justify-between items-center mb-4">
+                            <div class="text-center lg:flex justify-between items-center mb-4">
                                 <span class="text-xl font-bold md:text-2xl">Branding</span>
                                 <a @click="open = !open">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         :class="{'rotate-180': open, 'rotate-0': !open}"
-                                        class="inline w-6 h-6 transition-transform duration-200 transform " fill="none"
+                                        class="hidden lg:inline  w-6 h-6 transition-transform duration-200 transform " fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M19 9l-7 7-7-7" />
@@ -169,7 +169,7 @@
                                 x-transition:leave-start="transform opacity-100 scale-100"
                                 x-transition:leave-end="transform opacity-0 scale-95" class="p-2 border-l border-gray-300">
                                 
-                                <p class="text-xl leading-loose tracking-wider">
+                                <p class="text-xl leading-loose tracking-wider font-bold">
                                     What is Branding?
                                 </p>
                                 <p class="antialiased leading-tight">
@@ -183,10 +183,10 @@
                                     ultimately bring about the authenticity, professionalism and competitiveness of a
                                     brand
                                 </p>
-                                <p class="text-xl leading-loose tracking-wider">
+                                <p class="text-xl leading-loose tracking-wider font-bold">
                                     Why Branding?
                                 </p>
-                                <p class="text-xl leading-loose tracking-wider">
+                                <p class="text-xl leading-loose tracking-wider font-bold">
                                     Branding Gets Recognition
                                 </p>
                                 <p class="antialiased leading-tight">
@@ -207,7 +207,7 @@
                                     different, special, and unique. And it shows your customers why they should work
                                     with you instead of your competitors.
                                 </p>
-                                <p class="text-xl leading-loose tracking-wider">
+                                <p class="text-xl leading-loose tracking-wider font-bold">
                                     Branding Increases Business Value
                                 </p>
                                 <p class="antialiased leading-tight">
@@ -223,7 +223,7 @@
                                     connection is what transforms a prospect into a customer and a customer into a brand
                                     enthusiast.
                                 </p>
-                                <p class="text-xl leading-loose tracking-wider">
+                                <p class="text-xl leading-loose tracking-wider font-bold">
                                     Branding Creates Trust within the Marketplace
                                 </p>
                                 <p class="antialiased leading-tight">
@@ -237,7 +237,7 @@
                                     trust your company, the products and services it offers, and the way it handles its
                                     business.
                                 </p>
-                                <p class="text-xl leading-loose tracking-wider">
+                                <p class="text-xl leading-loose tracking-wider font-bold">
                                     Branding Supports Advertising
                                 </p>
                                 <p class="antialiased leading-tight">
@@ -254,72 +254,359 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
-                    <div class="flex items-center justify-center lg:col-span-1 col-span-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
-                            class="w-16 h-16">
-                            <path
-                                d="M285.177,179l15.513-3.914-7.827-31.028-15.514,3.913a176.937,176.937,0,0,0-129.3,133.557l-3.407,15.633,31.266,6.814,3.406-15.634A145.559,145.559,0,0,1,285.177,179Z">
-                            </path>
-                            <path
-                                d="M363.624,147.871C343.733,72.077,274.643,16,192.7,16,95.266,16,16,95.266,16,192.7c0,82.617,57,152.163,133.735,171.4A176.769,176.769,0,0,0,320.7,496c97.431,0,176.7-79.266,176.7-176.695C497.392,238.071,441.64,167.336,363.624,147.871ZM48,192.7C48,112.91,112.91,48,192.7,48s144.7,64.91,144.7,144.7-64.911,144.7-144.7,144.7S48,272.481,48,192.7ZM320.7,464c-60.931,0-115.21-38.854-135.843-94.792,2.6.115,5.214.184,7.843.184a176.862,176.862,0,0,0,32.7-3.047l97.625,97.625C322.247,463.983,321.473,464,320.7,464Zm41.528-6.083L260.26,355.954a176.9,176.9,0,0,0,43.662-26.072L408.37,434.33A144.385,144.385,0,0,1,362.223,457.917Zm69.3-45.692L326.851,307.557a177.082,177.082,0,0,0,27.911-44.5L457.67,365.964A144.661,144.661,0,0,1,431.519,412.225Zm33.594-84.073-99.42-99.42a176.785,176.785,0,0,0,3.7-36.036c0-3.285-.1-6.547-.276-9.787a145.054,145.054,0,0,1,96.276,136.4C465.392,322.276,465.291,325.224,465.113,328.152Z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div
-                        class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                        <span class="text-xs tracking-wider uppercase text-violet-600">Step 2 - Explicabo</span>
-                        <span class="text-xl font-bold md:text-2xl">Iure incidunt labore</span>
-                        <span class="mt-4 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore
-                            explicabo eaque, quia architecto veritatis dolores, enim cons equatur nihil ipsum.</span>
+            <div class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+                <div class="flex items-center justify-center lg:col-span-1 col-span-full">
+                    <img class="w-32 h-32" src="assets/Webdesign.svg" alt="Webdesign Icon">
+            
+                </div>
+                <div id="branding" class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
+                    <div @click.away="open = false" class="mr-5" x-data="{ open: false }">
+                        <div class="text-center lg:flex justify-between items-center mb-4">
+                            <span class="text-xl font-bold md:text-2xl">Branding</span>
+                            <a @click="open = !open">
+                                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-180': open, 'rotate-0': !open}"
+                                    class="hidden lg:inline  w-6 h-6 transition-transform duration-200 transform " fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                        </div>
+                        <span class="text-xs font-bold tracking-wider uppercase italic  text-violet-600">“SIMPLY,
+                            CAN IT CAN BE DESIGNED? WE DESIGN IT.”</span>
+            
+                        <span class="mt-8 text-gray-700">We revamp your Business Name, Make your tagline catchy,
+                            create/recreate your logo, create your artistic business cards &
+                            flyers, give your brand a unique pattern & letterhead, create your custom envelope
+                            design, your social media covers, an
+                            email signature, and more.</span>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                            x-transition:enter-start="transform opacity-0 scale-95"
+                            x-transition:enter-end="transform opacity-100 scale-100"
+                            x-transition:leave="transition ease-in duration-75"
+                            x-transition:leave-start="transform opacity-100 scale-100"
+                            x-transition:leave-end="transform opacity-0 scale-95" class="p-2 border-l border-gray-300">
+            
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                What is Branding?
+                            </p>
+                            <p class="antialiased leading-tight">
+                                Branding is marketing practice that focuses on building a unique visual appearance
+                                of a brand to give it a memorable
+                                impression on its prospects and as well as stand out among the very many competitors
+                                as a brand that brings an impact
+                                and elevate to the next level.
+                                It involves creating unique identity symbol or logo, unique brand patterns, use of
+                                unique color combinations inorder to
+                                ultimately bring about the authenticity, professionalism and competitiveness of a
+                                brand
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Why Branding?
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Branding Gets Recognition
+                            </p>
+                            <p class="antialiased leading-tight">
+                                The main reason for branding is for a company to be able to be recognized by its
+                                customers as well as prospects.
+                                Branding makes a company to be able to be identified by customers. The logo is the
+                                most important element of branding,
+                                especially where this factor is concerned, as it is essentially the face of the
+                                company.
+                                This is why a professional logo design should be powerful and easily memorable,
+                                making an impression on a person at
+                                first glance.
+                                Branding helps you stand out from the competition.
+                                It doesn’t matter what kind of company you have, what industry you’re in, or what
+                                type of customer you’re after—if
+                                you’re in business, you’ve got some serious competition. Branding helps you
+                                establish the ways in which you’re
+                                different, special, and unique. And it shows your customers why they should work
+                                with you instead of your competitors.
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Branding Increases Business Value
+                            </p>
+                            <p class="antialiased leading-tight">
+            
+                                Branding is important when trying to generate future business, and a strongly
+                                established brand can increase a
+                                business’s value by giving the company more leverage in the industry. This makes it
+                                a more appealing investment
+                                opportunity because of its firmly established place in the marketplace.
+                                Branding Generates New Customers
+                                The most successful businesses are the ones that foster an emotional connection with
+                                their audience. That emotional
+                                connection is what transforms a prospect into a customer and a customer into a brand
+                                enthusiast.
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Branding Creates Trust within the Marketplace
+                            </p>
+                            <p class="antialiased leading-tight">
+                                A professional appearance and well-strategized branding will help the company build
+                                trust with consumers, potential
+                                clients, and customers. People are more likely to do business with a company that
+                                has a polished and professional
+                                portrayal.
+                                Being properly branded gives the impression of being an industry expert and makes
+                                the public feel as though they can
+                                trust your company, the products and services it offers, and the way it handles its
+                                business.
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Branding Supports Advertising
+                            </p>
+                            <p class="antialiased leading-tight">
+                                Advertising is another component of branding, and advertising strategies will
+                                directly reflect the brand and its desired
+                                portrayal. Advertising techniques such as the use of promotional products from
+                                trusted companies such as Outstanding
+                                Branding make it easy to create a cohesive and appealing advertising strategy that
+                                plays well into your branding goals.
+            
+                            </p>
+                        </div>
+            
                     </div>
                 </div>
-                <div class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
-                    <div class="flex items-center justify-center lg:col-span-1 col-span-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
-                            class="w-16 h-16">
-                            <path
-                                d="M412.284,294.37l-12.5,15.642c-8.354,10.454-50.027,64.208-50.027,95.883,0,36.451,28.049,66.105,62.526,66.105s62.527-29.654,62.527-66.105c0-31.675-41.673-85.429-50.028-95.883Zm0,145.63c-16.832,0-30.526-15.3-30.526-34.105,0-11.662,15.485-37.883,30.531-59.2,15.043,21.3,30.522,47.509,30.522,59.2C442.811,424.7,429.116,440,412.284,440Z">
-                            </path>
-                            <path
-                                d="M122.669,51.492,96.133,124.4,30.092,97.205,17.908,126.8l67.271,27.7L26.9,314.606a48.056,48.056,0,0,0,28.689,61.523l184.719,67.232a48,48,0,0,0,61.523-28.688L397.6,151.56Zm149.1,352.236a16,16,0,0,1-20.508,9.563L66.537,346.059a16,16,0,0,1-9.563-20.507L73.553,280H316.8ZM85.2,248l29.594-81.311,36.333,14.961a32.644,32.644,0,1,0,11.236-29.98l-36.615-15.077,16.046-44.085,214.79,78.177L328,249.219V248Z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div
-                        class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                        <span class="text-xs tracking-wider uppercase text-violet-600">Step 3 - Facilis</span>
-                        <span class="text-xl font-bold md:text-2xl">Dolorem praesentium</span>
-                        <span class="mt-4 bg-gray-100 text-gray-700">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta
-                            iure
-                            incidunt labore explicabo eaque, quia architecto veritatis dolores, enim cons equatur nihil
-                            ipsum.</span>
+            </div>
+            <div class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+                <div class="flex items-center justify-center lg:col-span-1 col-span-full">
+                    <img class="w-32 h-32" src="assets/Webdesign.svg" alt="Webdesign Icon">
+            
+                </div>
+                <div class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
+                    <div @click.away="open = false" class="mr-5" x-data="{ open: false }">
+                        <div class="text-center lg:flex justify-between items-center mb-4">
+                            <span class="text-xl font-bold md:text-2xl">Branding</span>
+                            <a @click="open = !open">
+                                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-180': open, 'rotate-0': !open}"
+                                    class="hidden lg:inline  w-6 h-6 transition-transform duration-200 transform " fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                        </div>
+                        <span class="text-xs font-bold tracking-wider uppercase italic  text-violet-600">“SIMPLY,
+                            CAN IT CAN BE DESIGNED? WE DESIGN IT.”</span>
+            
+                        <span class="mt-8 text-gray-700">We revamp your Business Name, Make your tagline catchy,
+                            create/recreate your logo, create your artistic business cards &
+                            flyers, give your brand a unique pattern & letterhead, create your custom envelope
+                            design, your social media covers, an
+                            email signature, and more.</span>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                            x-transition:enter-start="transform opacity-0 scale-95"
+                            x-transition:enter-end="transform opacity-100 scale-100"
+                            x-transition:leave="transition ease-in duration-75"
+                            x-transition:leave-start="transform opacity-100 scale-100"
+                            x-transition:leave-end="transform opacity-0 scale-95" class="p-2 border-l border-gray-300">
+            
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                What is Branding?
+                            </p>
+                            <p class="antialiased leading-tight">
+                                Branding is marketing practice that focuses on building a unique visual appearance
+                                of a brand to give it a memorable
+                                impression on its prospects and as well as stand out among the very many competitors
+                                as a brand that brings an impact
+                                and elevate to the next level.
+                                It involves creating unique identity symbol or logo, unique brand patterns, use of
+                                unique color combinations inorder to
+                                ultimately bring about the authenticity, professionalism and competitiveness of a
+                                brand
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Why Branding?
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Branding Gets Recognition
+                            </p>
+                            <p class="antialiased leading-tight">
+                                The main reason for branding is for a company to be able to be recognized by its
+                                customers as well as prospects.
+                                Branding makes a company to be able to be identified by customers. The logo is the
+                                most important element of branding,
+                                especially where this factor is concerned, as it is essentially the face of the
+                                company.
+                                This is why a professional logo design should be powerful and easily memorable,
+                                making an impression on a person at
+                                first glance.
+                                Branding helps you stand out from the competition.
+                                It doesn’t matter what kind of company you have, what industry you’re in, or what
+                                type of customer you’re after—if
+                                you’re in business, you’ve got some serious competition. Branding helps you
+                                establish the ways in which you’re
+                                different, special, and unique. And it shows your customers why they should work
+                                with you instead of your competitors.
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Branding Increases Business Value
+                            </p>
+                            <p class="antialiased leading-tight">
+            
+                                Branding is important when trying to generate future business, and a strongly
+                                established brand can increase a
+                                business’s value by giving the company more leverage in the industry. This makes it
+                                a more appealing investment
+                                opportunity because of its firmly established place in the marketplace.
+                                Branding Generates New Customers
+                                The most successful businesses are the ones that foster an emotional connection with
+                                their audience. That emotional
+                                connection is what transforms a prospect into a customer and a customer into a brand
+                                enthusiast.
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Branding Creates Trust within the Marketplace
+                            </p>
+                            <p class="antialiased leading-tight">
+                                A professional appearance and well-strategized branding will help the company build
+                                trust with consumers, potential
+                                clients, and customers. People are more likely to do business with a company that
+                                has a polished and professional
+                                portrayal.
+                                Being properly branded gives the impression of being an industry expert and makes
+                                the public feel as though they can
+                                trust your company, the products and services it offers, and the way it handles its
+                                business.
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Branding Supports Advertising
+                            </p>
+                            <p class="antialiased leading-tight">
+                                Advertising is another component of branding, and advertising strategies will
+                                directly reflect the brand and its desired
+                                portrayal. Advertising techniques such as the use of promotional products from
+                                trusted companies such as Outstanding
+                                Branding make it easy to create a cohesive and appealing advertising strategy that
+                                plays well into your branding goals.
+            
+                            </p>
+                        </div>
+            
                     </div>
                 </div>
-                <div class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
-                    <div class="flex items-center justify-center lg:col-span-1 col-span-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
-                            class="w-16 h-16">
-                            <polygon
-                                points="388.632 393.82 495.823 255.94 388.684 118.178 363.424 137.822 455.288 255.944 363.368 374.18 388.632 393.82">
-                            </polygon>
-                            <polygon
-                                points="148.579 374.181 56.712 255.999 148.629 137.823 123.371 118.177 16.177 255.993 123.314 393.819 148.579 374.181">
-                            </polygon>
-                            <polygon points="330.529 16 297.559 16 178.441 496 211.412 496 330.529 16"></polygon>
-                        </svg>
-                    </div>
-                    <div
-                        class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                        <span class="text-xs tracking-wider uppercase text-violet-600">Step 4 - Aperiam</span>
-                        <span class="text-xl font-bold md:text-2xl">Explicabo eaque</span>
-                        <span class="mt-4 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore
-                            explicabo eaque, quia architecto veritatis dolores, enim cons equatur nihil ipsum.</span>
+            </div>
+            <div class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+                <div class="flex items-center justify-center lg:col-span-1 col-span-full">
+                    <img class="w-32 h-32" src="assets/Webdesign.svg" alt="Webdesign Icon">
+            
+                </div>
+                <div class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
+                    <div @click.away="open = false" class="mr-5" x-data="{ open: false }">
+                        <div class="text-center lg:flex justify-between items-center mb-4">
+                            <span class="text-xl font-bold md:text-2xl">Branding</span>
+                            <a @click="open = !open">
+                                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-180': open, 'rotate-0': !open}"
+                                    class="hidden lg:inline  w-6 h-6 transition-transform duration-200 transform " fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                        </div>
+                        <span class="text-xs font-bold tracking-wider uppercase italic  text-violet-600">“SIMPLY,
+                            CAN IT CAN BE DESIGNED? WE DESIGN IT.”</span>
+            
+                        <span class="mt-8 text-gray-700">We revamp your Business Name, Make your tagline catchy,
+                            create/recreate your logo, create your artistic business cards &
+                            flyers, give your brand a unique pattern & letterhead, create your custom envelope
+                            design, your social media covers, an
+                            email signature, and more.</span>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                            x-transition:enter-start="transform opacity-0 scale-95"
+                            x-transition:enter-end="transform opacity-100 scale-100"
+                            x-transition:leave="transition ease-in duration-75"
+                            x-transition:leave-start="transform opacity-100 scale-100"
+                            x-transition:leave-end="transform opacity-0 scale-95" class="p-2 border-l border-gray-300">
+            
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                What is Branding?
+                            </p>
+                            <p class="antialiased leading-tight">
+                                Branding is marketing practice that focuses on building a unique visual appearance
+                                of a brand to give it a memorable
+                                impression on its prospects and as well as stand out among the very many competitors
+                                as a brand that brings an impact
+                                and elevate to the next level.
+                                It involves creating unique identity symbol or logo, unique brand patterns, use of
+                                unique color combinations inorder to
+                                ultimately bring about the authenticity, professionalism and competitiveness of a
+                                brand
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Why Branding?
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Branding Gets Recognition
+                            </p>
+                            <p class="antialiased leading-tight">
+                                The main reason for branding is for a company to be able to be recognized by its
+                                customers as well as prospects.
+                                Branding makes a company to be able to be identified by customers. The logo is the
+                                most important element of branding,
+                                especially where this factor is concerned, as it is essentially the face of the
+                                company.
+                                This is why a professional logo design should be powerful and easily memorable,
+                                making an impression on a person at
+                                first glance.
+                                Branding helps you stand out from the competition.
+                                It doesn’t matter what kind of company you have, what industry you’re in, or what
+                                type of customer you’re after—if
+                                you’re in business, you’ve got some serious competition. Branding helps you
+                                establish the ways in which you’re
+                                different, special, and unique. And it shows your customers why they should work
+                                with you instead of your competitors.
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Branding Increases Business Value
+                            </p>
+                            <p class="antialiased leading-tight">
+            
+                                Branding is important when trying to generate future business, and a strongly
+                                established brand can increase a
+                                business’s value by giving the company more leverage in the industry. This makes it
+                                a more appealing investment
+                                opportunity because of its firmly established place in the marketplace.
+                                Branding Generates New Customers
+                                The most successful businesses are the ones that foster an emotional connection with
+                                their audience. That emotional
+                                connection is what transforms a prospect into a customer and a customer into a brand
+                                enthusiast.
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Branding Creates Trust within the Marketplace
+                            </p>
+                            <p class="antialiased leading-tight">
+                                A professional appearance and well-strategized branding will help the company build
+                                trust with consumers, potential
+                                clients, and customers. People are more likely to do business with a company that
+                                has a polished and professional
+                                portrayal.
+                                Being properly branded gives the impression of being an industry expert and makes
+                                the public feel as though they can
+                                trust your company, the products and services it offers, and the way it handles its
+                                business.
+                            </p>
+                            <p class="text-xl leading-loose tracking-wider font-bold">
+                                Branding Supports Advertising
+                            </p>
+                            <p class="antialiased leading-tight">
+                                Advertising is another component of branding, and advertising strategies will
+                                directly reflect the brand and its desired
+                                portrayal. Advertising techniques such as the use of promotional products from
+                                trusted companies such as Outstanding
+                                Branding make it easy to create a cohesive and appealing advertising strategy that
+                                plays well into your branding goals.
+            
+                            </p>
+                        </div>
+            
                     </div>
                 </div>
+            </div>
+               
+                 
             </div>
         </div>
     </section>
