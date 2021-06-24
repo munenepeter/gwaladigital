@@ -130,10 +130,10 @@
     <!-- End Banner -->
     <!-- ********************************************************************************************** -->
     <!-- start our solutions -->
-    <section class="bg-coolGray-100 text-coolGray-800">
+    <section class="bg-gray-100 text-gray-800">
         <div class="container flex flex-col p-6 mx-auto">
             <h2 class="py-4 text-3xl font-bold text-center">Our Solutions</h2>
-            <div class="divide-y divide-coolGray-300">
+            <div class="divide-y divide-gray-300">
                 <div class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
                     <div class="flex items-center justify-center lg:col-span-1 col-span-full">
                         <img class="w-32 h-32" src="assets/Webdesign.svg" alt="Webdesign Icon">
@@ -142,51 +142,114 @@
                     <div
                         class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
                         <div @click.away="open = false" class="mr-5" x-data="{ open: false }">
-                            <div class="flex justify-between items-center">
-                                <span class="text-xl font-bold md:text-2xl">Branding</span> 
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="text-xl font-bold md:text-2xl">Branding</span>
                                 <a @click="open = !open">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         :class="{'rotate-180': open, 'rotate-0': !open}"
-                                        class="inline w-6 h-6 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        class="inline w-6 h-6 transition-transform duration-200 transform " fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M19 9l-7 7-7-7" />
                                     </svg>
-                                </a> 
+                                </a>
                             </div>
-                            <span class="mt-8 text-coolGray-700">We revamp your Business Name, Make your tagline catchy, create/recreate your logo, create your artistic business cards &
-                            flyers, give your brand a unique pattern & letterhead, create your custom envelope design, your social media covers, an
-                            email signature, and more.</span>
+                            <span class="text-xs font-bold tracking-wider uppercase italic  text-violet-600">“SIMPLY,
+                                CAN IT CAN BE DESIGNED? WE DESIGN IT.”</span>
+
+                            <span class="mt-8 text-gray-700">We revamp your Business Name, Make your tagline catchy,
+                                create/recreate your logo, create your artistic business cards &
+                                flyers, give your brand a unique pattern & letterhead, create your custom envelope
+                                design, your social media covers, an
+                                email signature, and more.</span>
                             <div x-show="open" x-transition:enter="transition ease-out duration-100"
                                 x-transition:enter-start="transform opacity-0 scale-95"
                                 x-transition:enter-end="transform opacity-100 scale-100"
                                 x-transition:leave="transition ease-in duration-75"
                                 x-transition:leave-start="transform opacity-100 scale-100"
-                                x-transition:leave-end="transform opacity-0 scale-95">Lorem ipsum dolor sit, amet
-                                consectetur adipisicing elit. Voluptas velit dolores expedita repellat laboriosam natus
-                                quas
-                                ipsam fugiat sunt fugit dolorem minus mollitia laudantium iusto est animi sit sequi enim
-                                numquam sapiente, perferendis saepe. Non temporibus consequuntur nihil fugiat, cumque
-                                ratione ut nisi iste, et perferendis doloremque aliquid corporis labore est aperiam
-                                quam,
-                                accusantium quos! Laudantium dolores sapiente ad, vel non doloremque ipsam aliquid
-                                inventore
-                                distinctio, deserunt quaerat, nemo nihil. Dolores omnis impedit vero ratione maxime
-                                facere,
-                                eius velit dolorem aspernatur nam quis aut inventore quo cumque ab consequuntur, et
-                                praesentium suscipit unde mollitia voluptatibus officiis eligendi voluptates id. Quas
-                                delectus eius fuga debitis maiores illo velit in provident explicabo perspiciatis! Est
-                                similique nostrum veritatis nihil voluptatum delectus dolorem a unde nobis amet
-                                laudantium
-                                impedit eligendi, nulla quaerat autem harum at libero ad? Ullam, quidem maxime. In
-                                distinctio illo optio aperiam, modi hic! Assumenda magni, fugiat perspiciatis, tenetur
-                                similique cumque temporibus ipsam repudiandae repellendus harum optio consectetur porro
-                                rerum blanditiis minima error nobis culpa quaerat dolore deleniti possimus officiis,
-                                corrupti sequi saepe! Exercitationem porro expedita, mollitia nostrum quas cum quasi
-                                earum.
-                                Itaque culpa obcaecati iusto! Ducimus, amet nostrum corrupti natus numquam architecto,
-                                dicta
-                                sequi recusandae voluptates totam quam commodi? Dolorum.</div>
+                                x-transition:leave-end="transform opacity-0 scale-95" class="p-2 border-l border-gray-300">
+                                
+                                <p class="text-xl leading-loose tracking-wider">
+                                    What is Branding?
+                                </p>
+                                <p class="antialiased leading-tight">
+                                    Branding is marketing practice that focuses on building a unique visual appearance
+                                    of a brand to give it a memorable
+                                    impression on its prospects and as well as stand out among the very many competitors
+                                    as a brand that brings an impact
+                                    and elevate to the next level.
+                                    It involves creating unique identity symbol or logo, unique brand patterns, use of
+                                    unique color combinations inorder to
+                                    ultimately bring about the authenticity, professionalism and competitiveness of a
+                                    brand
+                                </p>
+                                <p class="text-xl leading-loose tracking-wider">
+                                    Why Branding?
+                                </p>
+                                <p class="text-xl leading-loose tracking-wider">
+                                    Branding Gets Recognition
+                                </p>
+                                <p class="antialiased leading-tight">
+                                    The main reason for branding is for a company to be able to be recognized by its
+                                    customers as well as prospects.
+                                    Branding makes a company to be able to be identified by customers. The logo is the
+                                    most important element of branding,
+                                    especially where this factor is concerned, as it is essentially the face of the
+                                    company.
+                                    This is why a professional logo design should be powerful and easily memorable,
+                                    making an impression on a person at
+                                    first glance.
+                                    Branding helps you stand out from the competition.
+                                    It doesn’t matter what kind of company you have, what industry you’re in, or what
+                                    type of customer you’re after—if
+                                    you’re in business, you’ve got some serious competition. Branding helps you
+                                    establish the ways in which you’re
+                                    different, special, and unique. And it shows your customers why they should work
+                                    with you instead of your competitors.
+                                </p>
+                                <p class="text-xl leading-loose tracking-wider">
+                                    Branding Increases Business Value
+                                </p>
+                                <p class="antialiased leading-tight">
+
+                                    Branding is important when trying to generate future business, and a strongly
+                                    established brand can increase a
+                                    business’s value by giving the company more leverage in the industry. This makes it
+                                    a more appealing investment
+                                    opportunity because of its firmly established place in the marketplace.
+                                    Branding Generates New Customers
+                                    The most successful businesses are the ones that foster an emotional connection with
+                                    their audience. That emotional
+                                    connection is what transforms a prospect into a customer and a customer into a brand
+                                    enthusiast.
+                                </p>
+                                <p class="text-xl leading-loose tracking-wider">
+                                    Branding Creates Trust within the Marketplace
+                                </p>
+                                <p class="antialiased leading-tight">
+                                    A professional appearance and well-strategized branding will help the company build
+                                    trust with consumers, potential
+                                    clients, and customers. People are more likely to do business with a company that
+                                    has a polished and professional
+                                    portrayal.
+                                    Being properly branded gives the impression of being an industry expert and makes
+                                    the public feel as though they can
+                                    trust your company, the products and services it offers, and the way it handles its
+                                    business.
+                                </p>
+                                <p class="text-xl leading-loose tracking-wider">
+                                    Branding Supports Advertising
+                                </p>
+                                <p class="antialiased leading-tight">
+                                    Advertising is another component of branding, and advertising strategies will
+                                    directly reflect the brand and its desired
+                                    portrayal. Advertising techniques such as the use of promotional products from
+                                    trusted companies such as Outstanding
+                                    Branding make it easy to create a cohesive and appealing advertising strategy that
+                                    plays well into your branding goals.
+
+                                </p>
+                            </div>
 
                         </div>
                     </div>
@@ -207,7 +270,7 @@
                         class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
                         <span class="text-xs tracking-wider uppercase text-violet-600">Step 2 - Explicabo</span>
                         <span class="text-xl font-bold md:text-2xl">Iure incidunt labore</span>
-                        <span class="mt-4 text-coolGray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <span class="mt-4 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore
                             explicabo eaque, quia architecto veritatis dolores, enim cons equatur nihil ipsum.</span>
                     </div>
@@ -228,7 +291,7 @@
                         class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
                         <span class="text-xs tracking-wider uppercase text-violet-600">Step 3 - Facilis</span>
                         <span class="text-xl font-bold md:text-2xl">Dolorem praesentium</span>
-                        <span class="mt-4 bg-coolGray-100 text-coolGray-700">Lorem ipsum dolor sit amet consectetur
+                        <span class="mt-4 bg-gray-100 text-gray-700">Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta
                             iure
                             incidunt labore explicabo eaque, quia architecto veritatis dolores, enim cons equatur nihil
@@ -252,7 +315,7 @@
                         class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
                         <span class="text-xs tracking-wider uppercase text-violet-600">Step 4 - Aperiam</span>
                         <span class="text-xl font-bold md:text-2xl">Explicabo eaque</span>
-                        <span class="mt-4 text-coolGray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <span class="mt-4 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore
                             explicabo eaque, quia architecto veritatis dolores, enim cons equatur nihil ipsum.</span>
                     </div>
