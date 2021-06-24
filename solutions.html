@@ -17,92 +17,90 @@
 </head>
 
 <body>
-<!-- Start NavBar -->
-<header class="text-gray-600 body-font sticky top-0 bg-yellow-500">
-    <div class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
-        <a class="hidden lg:flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" class=" rounded-lg w-10 h-10 text-white p-2 bg-yellow-200"
-                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-            </svg>
-            <span class="ml-3 text-xl ">Gwala Digital</span>
-        </a>
-        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
-            <a href="pricing.html" class="mr-5 hover:text-gray-900">About</a>
-            <div @click.away="open = false" class="mr-5  relative" x-data="{ open: false }">
-                <a @click="open = !open"
-                    class="flex flex-row items-center text-sm font-semibold text-left  rounded-lg  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 ">
-                    <span>Solutions</span>
-                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
-                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                        <path fill-rule="evenodd"
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </a>
-                <div x-show="open" x-transition:enter="transition ease-out duration-100"
-                    x-transition:enter-start="transform opacity-0 scale-95"
-                    x-transition:enter-end="transform opacity-100 scale-100"
-                    x-transition:leave="transition ease-in duration-75"
-                    x-transition:leave-start="transform opacity-100 scale-100"
-                    x-transition:leave-end="transform opacity-0 scale-95"
-                    class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-                    <div class="px-2 py-2 bg-yellow-400 rounded-md shadow ">
-                        <a class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
-                            href="#">
-                            <span>Branding</span>
+    <!-- Start NavBar -->
+    <header class="text-gray-600 body-font sticky top-0 bg-yellow-500">
+        <div class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
+            <a class="hidden lg:flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class=" rounded-lg w-10 h-10 text-white p-2 bg-yellow-200"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+                <span class="ml-3 text-xl ">Gwala Digital</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+                <a href="pricing.html" class="mr-5 hover:text-gray-900">About</a>
+                <div @click.away="open = false" class="mr-5  relative" x-data="{ open: false }">
+                    <a @click="open = !open"
+                        class="flex flex-row items-center text-sm font-semibold text-left  rounded-lg  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 ">
+                        <span>Solutions</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                            class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="transform opacity-0 scale-95"
+                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="transform opacity-100 scale-100"
+                        x-transition:leave-end="transform opacity-0 scale-95"
+                        class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                        <div class="px-2 py-2 bg-yellow-400 rounded-md shadow ">
+                            <a class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
+                                href="#">
+                                <span>Branding</span>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                            </svg>
-                        </a>
-                        <a class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
-                            href="#">
-                            <span>Digital Marketing</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                            </a>
+                            <a class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
+                                href="#">
+                                <span>Digital Marketing</span>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                            </svg></a>
-                        <a class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
-                            href="#">
-                            <span>Website Design</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                            </svg>
-                        </a>
-                        <a class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
-                            href="#">
-                            <span>Mobile Apps Development</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg></a>
+                            <a class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
+                                href="#">
+                                <span>Website Design</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                            </a>
+                            <a class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
+                                href="#">
+                                <span>Mobile Apps Development</span>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ml-1" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                            </svg></a>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ml-1" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- <a href="solutions.html" class="mr-5 hover:text-gray-900">Solutions</a> -->
-            <!-- <a href="pricing.html" class="mr-5 hover:text-gray-900">Pricing</a> -->
-        </nav>
-        <button
-            class="hidden md:inline-flex   lg:inline-flex items-center bg-yellow-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Hire
-            Us
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-4 h-4 ml-1 animate-ping" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-        </button>
-    </div>
-</header>
+            </nav>
+            <button
+                class="hidden md:inline-flex   lg:inline-flex items-center bg-yellow-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Hire
+                Us
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-1 animate-ping" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
     <!-- End Navbar -->
     <!-- ********************************************************************************************** -->
     <!-- Start Banner -->
@@ -132,421 +130,134 @@
     <!-- End Banner -->
     <!-- ********************************************************************************************** -->
     <!-- start our solutions -->
-    <section class="bg-opacity-75 bg-cover bg-blend-overlay"
-        style="background-image: url('https://images.pexels.com/photos/3183127/pexels-photo-3183127.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');">
-        <h2 class="pt-8 mb-8 text-4xl font-bold leading-none text-center">Our Solutions</h2>
-        <!-- First Item in the Line -->
-        <div class="first-item bg-gradient-to-r from-yellow-200  to-yellow-400 bg-opacity-75 ">
-            <div class="container block lg:flex justify-around p-6">
-                <div
-                    class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-4 lg:px-8 lg:py-16   text-gray-800   ">
+    <section class="bg-coolGray-100 text-coolGray-800">
+        <div class="container flex flex-col p-6 mx-auto">
+            <h2 class="py-4 text-3xl font-bold text-center">Our Solutions</h2>
+            <div class="divide-y divide-coolGray-300">
+                <div class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+                    <div class="flex items-center justify-center lg:col-span-1 col-span-full">
+                        <img class="w-32 h-32" src="assets/Webdesign.svg" alt="Webdesign Icon">
 
-                    <h2 class="lg:mb-8 mb-2 text-4xl font-bold leading-none lg:text-center">Branding</h2>
-                    <div class="lg:mt-4 hidden lg:inline-flex md:inline-flex">
-                        <a
-                            class="inline-flex md:px-4 px-4 py-2 md:-ml-1 ml-2 w-40 text-center font-semibold rounded-full border-2  border-yellow-500 text-yellow-600">Get
-                            Service
-                            <svg xmlns="http://www.w3.org/2000/svg" class=" mt-1 ml-2 -mr-1 h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
+                        <div @click.away="open = false" class="mr-5" x-data="{ open: false }">
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold md:text-2xl">Branding</span> 
+                                <a @click="open = !open">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        :class="{'rotate-180': open, 'rotate-0': !open}"
+                                        class="inline w-6 h-6 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </a> 
+                            </div>
+                            <span class="mt-8 text-coolGray-700">We revamp your Business Name, Make your tagline catchy, create/recreate your logo, create your artistic business cards &
+                            flyers, give your brand a unique pattern & letterhead, create your custom envelope design, your social media covers, an
+                            email signature, and more.</span>
+                            <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                                x-transition:enter-start="transform opacity-0 scale-95"
+                                x-transition:enter-end="transform opacity-100 scale-100"
+                                x-transition:leave="transition ease-in duration-75"
+                                x-transition:leave-start="transform opacity-100 scale-100"
+                                x-transition:leave-end="transform opacity-0 scale-95">Lorem ipsum dolor sit, amet
+                                consectetur adipisicing elit. Voluptas velit dolores expedita repellat laboriosam natus
+                                quas
+                                ipsam fugiat sunt fugit dolorem minus mollitia laudantium iusto est animi sit sequi enim
+                                numquam sapiente, perferendis saepe. Non temporibus consequuntur nihil fugiat, cumque
+                                ratione ut nisi iste, et perferendis doloremque aliquid corporis labore est aperiam
+                                quam,
+                                accusantium quos! Laudantium dolores sapiente ad, vel non doloremque ipsam aliquid
+                                inventore
+                                distinctio, deserunt quaerat, nemo nihil. Dolores omnis impedit vero ratione maxime
+                                facere,
+                                eius velit dolorem aspernatur nam quis aut inventore quo cumque ab consequuntur, et
+                                praesentium suscipit unde mollitia voluptatibus officiis eligendi voluptates id. Quas
+                                delectus eius fuga debitis maiores illo velit in provident explicabo perspiciatis! Est
+                                similique nostrum veritatis nihil voluptatum delectus dolorem a unde nobis amet
+                                laudantium
+                                impedit eligendi, nulla quaerat autem harum at libero ad? Ullam, quidem maxime. In
+                                distinctio illo optio aperiam, modi hic! Assumenda magni, fugiat perspiciatis, tenetur
+                                similique cumque temporibus ipsam repudiandae repellendus harum optio consectetur porro
+                                rerum blanditiis minima error nobis culpa quaerat dolore deleniti possimus officiis,
+                                corrupti sequi saepe! Exercitationem porro expedita, mollitia nostrum quas cum quasi
+                                earum.
+                                Itaque culpa obcaecati iusto! Ducimus, amet nostrum corrupti natus numquam architecto,
+                                dicta
+                                sequi recusandae voluptates totam quam commodi? Dolorum.</div>
+
+                        </div>
                     </div>
                 </div>
-                <div class="lg:w-1/2 text-left items-center">
-                    <ul class="grid gap-3 md:grid-rows-2 lg:grid-rows-3">
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Logo | Business Cards | Letterheads</span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Book Cover </span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Email Signature </span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Mobile App Design</span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Web Design </span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Product Package </span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Posters </span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Flyers |Brochures |Postcard Design </span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Social Media Posts | Background </span>
-                        </li>
-                    </ul>
-                    <div class="mt-4 lg:hidden md:hidden">
-                        <a
-                            class="inline-flex px-4 py-2 ml-2 w-40 text-center font-semibold rounded-full border-2  border-yellow-500 text-yellow-600">Get
-                            Service
-                            <svg xmlns="http://www.w3.org/2000/svg" class=" mt-1 ml-2 -mr-1 h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
+                <div class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+                    <div class="flex items-center justify-center lg:col-span-1 col-span-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                            class="w-16 h-16">
+                            <path
+                                d="M285.177,179l15.513-3.914-7.827-31.028-15.514,3.913a176.937,176.937,0,0,0-129.3,133.557l-3.407,15.633,31.266,6.814,3.406-15.634A145.559,145.559,0,0,1,285.177,179Z">
+                            </path>
+                            <path
+                                d="M363.624,147.871C343.733,72.077,274.643,16,192.7,16,95.266,16,16,95.266,16,192.7c0,82.617,57,152.163,133.735,171.4A176.769,176.769,0,0,0,320.7,496c97.431,0,176.7-79.266,176.7-176.695C497.392,238.071,441.64,167.336,363.624,147.871ZM48,192.7C48,112.91,112.91,48,192.7,48s144.7,64.91,144.7,144.7-64.911,144.7-144.7,144.7S48,272.481,48,192.7ZM320.7,464c-60.931,0-115.21-38.854-135.843-94.792,2.6.115,5.214.184,7.843.184a176.862,176.862,0,0,0,32.7-3.047l97.625,97.625C322.247,463.983,321.473,464,320.7,464Zm41.528-6.083L260.26,355.954a176.9,176.9,0,0,0,43.662-26.072L408.37,434.33A144.385,144.385,0,0,1,362.223,457.917Zm69.3-45.692L326.851,307.557a177.082,177.082,0,0,0,27.911-44.5L457.67,365.964A144.661,144.661,0,0,1,431.519,412.225Zm33.594-84.073-99.42-99.42a176.785,176.785,0,0,0,3.7-36.036c0-3.285-.1-6.547-.276-9.787a145.054,145.054,0,0,1,96.276,136.4C465.392,322.276,465.291,325.224,465.113,328.152Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
+                        <span class="text-xs tracking-wider uppercase text-violet-600">Step 2 - Explicabo</span>
+                        <span class="text-xl font-bold md:text-2xl">Iure incidunt labore</span>
+                        <span class="mt-4 text-coolGray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore
+                            explicabo eaque, quia architecto veritatis dolores, enim cons equatur nihil ipsum.</span>
+                    </div>
+                </div>
+                <div class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+                    <div class="flex items-center justify-center lg:col-span-1 col-span-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                            class="w-16 h-16">
+                            <path
+                                d="M412.284,294.37l-12.5,15.642c-8.354,10.454-50.027,64.208-50.027,95.883,0,36.451,28.049,66.105,62.526,66.105s62.527-29.654,62.527-66.105c0-31.675-41.673-85.429-50.028-95.883Zm0,145.63c-16.832,0-30.526-15.3-30.526-34.105,0-11.662,15.485-37.883,30.531-59.2,15.043,21.3,30.522,47.509,30.522,59.2C442.811,424.7,429.116,440,412.284,440Z">
+                            </path>
+                            <path
+                                d="M122.669,51.492,96.133,124.4,30.092,97.205,17.908,126.8l67.271,27.7L26.9,314.606a48.056,48.056,0,0,0,28.689,61.523l184.719,67.232a48,48,0,0,0,61.523-28.688L397.6,151.56Zm149.1,352.236a16,16,0,0,1-20.508,9.563L66.537,346.059a16,16,0,0,1-9.563-20.507L73.553,280H316.8ZM85.2,248l29.594-81.311,36.333,14.961a32.644,32.644,0,1,0,11.236-29.98l-36.615-15.077,16.046-44.085,214.79,78.177L328,249.219V248Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
+                        <span class="text-xs tracking-wider uppercase text-violet-600">Step 3 - Facilis</span>
+                        <span class="text-xl font-bold md:text-2xl">Dolorem praesentium</span>
+                        <span class="mt-4 bg-coolGray-100 text-coolGray-700">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta
+                            iure
+                            incidunt labore explicabo eaque, quia architecto veritatis dolores, enim cons equatur nihil
+                            ipsum.</span>
+                    </div>
+                </div>
+                <div class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+                    <div class="flex items-center justify-center lg:col-span-1 col-span-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                            class="w-16 h-16">
+                            <polygon
+                                points="388.632 393.82 495.823 255.94 388.684 118.178 363.424 137.822 455.288 255.944 363.368 374.18 388.632 393.82">
+                            </polygon>
+                            <polygon
+                                points="148.579 374.181 56.712 255.999 148.629 137.823 123.371 118.177 16.177 255.993 123.314 393.819 148.579 374.181">
+                            </polygon>
+                            <polygon points="330.529 16 297.559 16 178.441 496 211.412 496 330.529 16"></polygon>
+                        </svg>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
+                        <span class="text-xs tracking-wider uppercase text-violet-600">Step 4 - Aperiam</span>
+                        <span class="text-xl font-bold md:text-2xl">Explicabo eaque</span>
+                        <span class="mt-4 text-coolGray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore
+                            explicabo eaque, quia architecto veritatis dolores, enim cons equatur nihil ipsum.</span>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-        <!-- End of first Item in the Line -->
-        <!-- **************************************************** -->
-        <!-- Second Item in the Line -->
-        <div class="second-item bg-gradient-to-r from-yellow-300  to-yellow-500 bg-opacity-75">
-
-            <div class="container block lg:flex justify-around p-6">
-                <div
-                    class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16   text-gray-800   ">
-
-                    <h2 class="lg:mb-8 mb-2 text-4xl font-bold leading-none lg:text-center">Digital Marketing</h2>
-                    <div class="lg:mt-4 hidden lg:inline-flex md:inline-flex">
-                        <a
-                            class="inline-flex px-4 py-2 ml-12 w-40 text-center font-semibold rounded-full border-2  border-yellow-500 text-yellow-600">Get
-                            Service
-                            <svg xmlns="http://www.w3.org/2000/svg" class=" mt-1 ml-2 -mr-1 h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="lg:w-1/2 text-left items-center">
-                    <ul class="grid gap-3 md:grid-rows-2 lg:grid-rows-3">
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Social Media Management</span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Search Engine Optimization</span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Influencer Marketing </span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Pay Per Click Management</span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Photography services </span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Jingle and Signature Tunes Services </span>
-                        </li>
-
-                    </ul>
-                    <div class="mt-4 lg:hidden md:hidden">
-                        <a
-                            class="inline-flex px-4 py-2 ml-2 w-40 text-center font-semibold rounded-full border-2  border-yellow-500 text-yellow-600">Get
-                            Service
-                            <svg xmlns="http://www.w3.org/2000/svg" class=" mt-1 ml-2 -mr-1 h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-
-        <div class="third-item  bg-gradient-to-r from-yellow-400  to-yellow-600 bg-opacity-75">
-
-            <div class="container block lg:flex justify-around p-6">
-                <div
-                    class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8   text-gray-800   ">
-
-                    <h2 class="lg:mb-8 mb-2 text-4xl font-bold leading-none lg:text-center">Website Design</h2>
-                    <div class="lg:mt-4 hidden lg:inline-flex md:inline-flex">
-                        <a
-                            class="inline-flex px-4 py-2 ml-12 w-40 text-center font-semibold rounded-full border-2  border-yellow-200 text-yellow-200">Get
-                            Service
-                            <svg xmlns="http://www.w3.org/2000/svg" class=" mt-1 ml-2 -mr-1 h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="lg:w-1/2 text-left items-center lg:py-8 ">
-                    <ul class="grid gap-3 md:grid-rows-2 lg:grid-rows-3">
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Word Press Web Design</span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>E-Commerce Web Design </span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Blog Web Design </span>
-                        </li>
-                    </ul>
-                    <div class="mt-4 lg:hidden md:hidden">
-                        <a
-                            class="inline-flex px-4 py-2 ml-2 w-40 text-center font-semibold rounded-full border-2  border-yellow-200 text-yellow-200">Get
-                            Service
-                            <svg xmlns="http://www.w3.org/2000/svg" class=" mt-1 ml-2 -mr-1 h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="fourth-item bg-gradient-to-r from-yellow-500  to-yellow-700 bg-opacity-75 ">
-            <div class="container block lg:flex justify-around p-6">
-                <div
-                    class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8   text-gray-800   ">
-
-                    <h2 class="lg:mb-8 mb-2 text-4xl font-bold leading-none lg:text-center">Mobile Apps Development </h2>
-                    <div class="lg:mt-4 hidden lg:inline-flex md:inline-flex">
-                        <a
-                            class="inline-flex px-4 py-2 ml-28 w-40 text-center font-semibold rounded-full border-2  border-yellow-300 text-yellow-300">Get
-                            Service
-                            <svg xmlns="http://www.w3.org/2000/svg" class=" mt-1 ml-2 -mr-1 h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="lg:w-1/2 text-left items-center lg:py-8 ">
-                    <ul class="grid gap-3 md:grid-rows-2 lg:grid-rows-3">
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Word Press Web Design</span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>E-Commerce Web Design </span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                class="w-5 h-5 fill-current text-yellow-600">
-                                <path
-                                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z">
-                                </path>
-                                <polygon
-                                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808">
-                                </polygon>
-                            </svg>
-                            <span>Blog Web Design </span>
-                        </li>
-                    </ul>
-                    <div class="mt-4 lg:hidden md:hidden">
-                        <a
-                            class="inline-flex px-4 py-2 ml-2 w-40 text-center font-semibold rounded-full border-2  border-yellow-300 text-yellow-300">Get
-                            Service
-                            <svg xmlns="http://www.w3.org/2000/svg" class=" mt-1 ml-2 -mr-1 h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         </div>
     </section>
 
