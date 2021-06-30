@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="Gwala Digital">
+    <meta name="description" content="A modern 360 digital service">
+    <meta name="keywords" content="Web dev, Digital marketing, Hosting, Events, PR, Website, System">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Peter Munene">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gwala Digital - Bridging Now & The Future</title>
+
+    <link rel="shortcut icon" type="image/svg" href="assets/symbol-favicon.svg" />
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Start NavBar -->
+    <header class="text-gray-600 body-font sticky top-0 bg-yellow-500">
+        <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
+            <a class="hidden lg:flex title-font font-medium items-center text-gray-900  md:mb-0">
+                <img class="w-28 h-16" src="assets/GwalaLogo-Png.png" alt="Gwala Digital Logo">
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+                <a href="about.html" class="mr-5 hover:text-gray-900">About</a>
+                <div @click.away="open = false" class="mr-5  relative" x-data="{ open: false }">
+                    <a @click="open = !open"
+                        class="flex flex-row items-center text-sm font-semibold text-left  rounded-lg  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 ">
+                        <span>Solutions</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                            class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="transform opacity-0 scale-95"
+                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="transform opacity-100 scale-100"
+                        x-transition:leave-end="transform opacity-0 scale-95"
+                        class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                        <div class="w-40 lg:w-auto md:w-auto lg:px-2 py-2 bg-yellow-400 rounded-md shadow ">
+                            <a class="flex flex-inline items-center hover:bg-yellow-200 px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
+                                href="solutions.html#branding">
+                                <span>Branding</span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                            </a>
+                            <a class="flex flex-inline items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
+                                href="#">
+                                <span>Digital Marketing</span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg></a>
+                            <a class="flex flex-inline items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
+                                href="#">
+                                <span>Web Design</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                            </a>
+                            <a class="flex flex-inline items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-200 focus:bg-yellow-200 focus:outline-none focus:shadow-outline"
+                                href="#">
+                                <span>Mobile Apps Development</span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ml-1" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <a href="pricing.html"
+                class="hidden md:inline-flex   lg:inline-flex items-center bg-yellow-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Hire
+                Us
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-1 animate-ping" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- End Navbar -->
+    <!-- ********************************************************************************************** -->
+    <!-- Start Hero Section -->
+    <header class="h-full flex justify-between w-full bg-gray-600 bg-cover bg-blend-overlay"
+        style="background-image: url('https://images.pexels.com/photos/3183127/pexels-photo-3183127.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');">
+        <!-- Main div -->
+        <div class="lg:2/6 xl:w-2/4 mt-8 lg:mb-28 lg:mt-28  lg:ml-12 lg:text-left text-center  items-center">
+            <div
+                class=" text-4xl lg:text-6xl font-semibold text-white leading-none text-center md:text-left lg:text-left">
+                We Bridge Brands’ Now To The Future </div>
+            <div class="mt-6 text-xl font-light text-gray-200 antialiased text-center md:text-left lg:text-left">
+                We are a team of digital experts equipped to help your brand achieve a total digital transformation.
+            </div>
+            <button
+                class="mb-4  mt-4 lg:mt-12 px-16 lg:px-6 py-2 lg:py-2  text-base rounded font-normal tracking-wide bg-yellow-500 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+                Hire Us
+            </button>
+        </div>
+        <!--  -->
+        <div class="hidden   lg:inline-flex md:hidden mr-20 lg:mb-24 lg:mt-20 lg:mr-52 text-left ">
+            <div class="rounded-full h-72 w-80 p-1 bg-gradient-to-r  from-yellow-300 to-transparent">
+                <img class="h-72 w-full rounded-full"
+                    src="https://image.freepik.com/free-vector/coding-concept-illustration_114360-859.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- End Hero Section -->
+ 
+            <section class="p-6 bg-yellow-100 text-gray-900">
+                <form novalidate="" action="" class="container flex flex-col mx-auto space-y-12 ng-untouched ng-pristine ng-valid">
+                    <fieldset class="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm bg-gray-50">
+                        <div class="space-y-2 col-span-full lg:col-span-1">
+                            <p class="font-medium">Personal Inormation</p>
+                            <p class="text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci fuga autem eum!
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
+                            <div class="col-span-full sm:col-span-3">
+                                <label for="firstname" class="text-sm">First name</label>
+                                <input id="firstname" type="text" placeholder="First name"
+                                    class=" border border-yellow-200 p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900">
+                            </div>
+                            <div class="col-span-full sm:col-span-3">
+                                <label for="lastname" class="text-sm">Last name</label>
+                                <input id="lastname" type="text" placeholder="Last name"
+                                    class=" border border-yellow-200 p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900">
+                            </div>
+                            <div class="col-span-full sm:col-span-3">
+                                <label for="email" class="text-sm">Email</label>
+                                <input id="email" type="email" placeholder="Email"
+                                    class=" border border-yellow-200 p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900">
+                            </div>
+                            <div class="col-span-full">
+                                <label for="address" class="text-sm">Address</label>
+                                <input id="address" type="text" placeholder=""
+                                    class=" border border-yellow-200 p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900">
+                            </div>
+                            <div class="col-span-full sm:col-span-2">
+                                <label for="city" class="text-sm">City</label>
+                                <input id="city" type="text" placeholder=""
+                                    class=" border border-yellow-200 p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900">
+                            </div>
+                            <div class="col-span-full sm:col-span-2">
+                                <label for="state" class="text-sm">State / Province</label>
+                                <input id="state" type="text" placeholder=""
+                                    class=" border border-yellow-200 p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900">
+                            </div>
+                            <div class="col-span-full sm:col-span-2">
+                                <label for="zip" class="text-sm">ZIP / Postal</label>
+                                <input id="zip" type="text" placeholder=""
+                                    class=" border border-yellow-200 p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- <fieldset class="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm bg-gray-50">
+                        <div class="space-y-2 col-span-full lg:col-span-1">
+                            <p class="font-medium">Profile</p>
+                            <p class="text-xs">Adipisci fuga autem eum!</p>
+                        </div>
+                        <div class="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
+                            <div class="col-span-full sm:col-span-3">
+                                <label for="username" class="text-sm">Username</label>
+                                <input id="username" type="text" placeholder="Username"
+                                    class="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900">
+                            </div>
+                            <div class="col-span-full sm:col-span-3">
+                                <label for="website" class="text-sm">Website</label>
+                                <input id="website" type="text" placeholder="https://"
+                                    class="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900">
+                            </div>
+                            <div class="col-span-full">
+                                <label for="bio" class="text-sm">Bio</label>
+                                <textarea id="bio" placeholder=""
+                                    class="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900"></textarea>
+                            </div>
+                            <div class="col-span-full">
+                                <label for="bio" class="text-sm">Photo</label>
+                                <div class="flex items-center space-x-2">
+                                    <img src="https://source.unsplash.com/30x30/?random" alt=""
+                                        class="w-10 h-10 rounded-full bg-gray-300">
+                                    <button class="px-4 py-2 border rounded-md border-gray-800">Change</button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset> -->
+                </form>
+            </section>
+
+            </body>
+            </html>

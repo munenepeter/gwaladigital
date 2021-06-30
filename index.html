@@ -12,83 +12,21 @@
     <meta name="author" content="Peter Munene">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gwala Digital - Bridging Now & The Future</title>
+
+    <link rel="shortcut icon" type="image/svg" href="assets/symbol-favicon.svg" />
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"></script>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .mySlides {
-            display: none;
-        }
-
-        .dot {
-            height: 2px;
-            width: 25px;
-            margin: 0 2px;
-            background-color: rgba(245,158,11, 0.5); 
-            display: inline-block;
-            transition: width 2s linear 1s;
-            transition-timing-function: ease-in-out;
-            /* transition: background-color 0.6s ease; */
-        }
-
-        .active {
-            background-color: #717171;
-        }
-
-        /* Fading animation */
-        .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 3.5s;
-            animation-fill-mode: forwards;
-        }
-
-        @-webkit-keyframes fade {
-            from {
-                left: 100px;
-                opacity: .4
-            }
-
-            to {
-                left: 0px;
-                opacity: 1
-            }
-        }
-
-        @keyframes fade {
-            from {
-                left: 0px;
-                opacity: .4
-            }
-
-            to {
-                left: -200px;
-                opacity: 1
-            }
-        }
-
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-            .text {
-                font-size: 11px
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <!-- Start NavBar -->
-    <header class="text-gray-600 body-font sticky top-0 bg-yellow-500">
-            <div class="bg-red-400 bg-opacity-75">
-                <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-                    <div class="flex items-center font-semibold justify-between flex-wrap text-lg capitalize text-red-800"
-                        id="demo">
-                    </div>
-                </div>
-            </div>
-        <div class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
-            <a class="hidden lg:flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <img class="w-32 h-16" src="assets/GwalaLogo.svg" alt="Gwala Digital Logo">
+    <header class="text-gray-600 body-font sticky top-0 bg-yellow-500"> 
+        <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
+            <a class="hidden lg:flex title-font font-medium items-center text-gray-900  md:mb-0">
+                <img class="w-28 h-16" src="assets/GwalaLogo-Png.png" alt="Gwala Digital Logo">
             </a>
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
                 <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
@@ -151,9 +89,9 @@
                                 </svg></a>
                         </div>
                     </div>
-                </div> 
+                </div>
             </nav>
-            <a href="pricing.html"
+            <a href="hire-us.html"
                 class="hidden md:inline-flex   lg:inline-flex items-center bg-yellow-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Hire
                 Us
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -332,28 +270,28 @@
                 </h1>
                 <span class=" inline-block h-1 w-52 rounded bg-yellow-500 mt-8"></span>
             </div>
-        </div> 
+        </div>
         <div class="text-gray-600 ">
             <div class="container px-5 py-8 mx-auto">
-                <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center mySlides fade"> 
-                    <p class="leading-relaxed text-lg">Demo text Demo text Demo text Demo text Demo text Demo
-                    text
-                    Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                    text
-                    Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                    text</p>
+                <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center mySlides fade">
+                    <p class="leading-relaxed text-lg">Demo text1 Demo text1 Demo text1 Demo text1 Demo text1 Demo
+                        text1
+                        Demo text1 Demo text1 Demo text1 Demo text1 Demo text1 Demo text1 Demo text1 Demo text1 Demo
+                        text
+                        Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                        text</p>
                     <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
-                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Demo Client1</h2> 
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Demo Client1</h2>
                 </div>
                 <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center mySlides fade">
-                    <p class="leading-relaxed text-lg">Demo text Demo text Demo text Demo text Demo text Demo
-                    text
-                    Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                    text
-                    Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
-                    text</p>
+                    <p class="leading-relaxed text-lg">Demo text2 Demo text Demo text Demo text Demo text Demo
+                        text2
+                        Demo text2 Demo text2 Demo text2 Demo text2 Demo text Demo text Demo text Demo text Demo
+                        text
+                        Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
+                        text</p>
                     <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
-                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Demo Client2</h2> 
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Demo Client2</h2>
                 </div>
                 <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center mySlides fade">
                     <p class="leading-relaxed text-lg">Demo text Demo text Demo text Demo text Demo text Demo
@@ -372,8 +310,26 @@
                 </div>
             </div>
         </div>
-       
-
+    </section>
+    <section class="bg-yellow-100 pb-8">
+        <div class="bg-yellow-100">
+            <h2 class="text-4xl font-semibold leading-none text-center p-4" >Our Clients</h2>
+            <section class="customer-logos slider">
+                <div class="slide"><img class="h-20 w-20 rounded-full" src="assets/client1.svg">
+                </div>
+                <div class="slide"><img class="h-20 w-20 rounded-full" src=" assets/client2.svg"></div>
+                <div class="slide"><img class="h-20 w-20 rounded-full" src=" assets/client3.svg"></div>
+                <div class="slide"><img class="h-20 w-20 rounded-full" src=" assets/client4.svg">
+                </div>
+                <div class="slide"><img class="h-20 w-20 rounded-full" src="assets/client5.svg "></div>
+                <div class="slide"><img class="h-20 w-20 rounded-full" src="assets/client6.svg"></div>
+                <div class="slide"><img class="h-20 w-20 rounded-full" src="assets/client7.svg ">
+                </div>
+                <!-- <div class="slide"><img class="h-16 w-16 rounded-full" src="assets/client7.svg">
+                </div> -->
+            </section>
+            <!-- http://127.0.0.1:5500/assets/client7.svg-->
+        </div>
     </section>
     <!-- End Our Solutions Section -->
     <!-- ********************************************************************************************** -->
@@ -451,7 +407,7 @@
             </div>
         </div>
     </section>
-    <!-- Start Footer -->
+    <!-- End Footer -->
     <script src="js/index.js"></script>
 </body>
 

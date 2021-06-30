@@ -17,13 +17,37 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
+
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+
 /*******
  * 
  * Javascript Timer just for fun
  */
 
         // Set the date we're counting down to
-        var countDownDate = new Date("Jun 30, 2021 00:00:25").getTime();
+        var countDownDate = new Date("Jul 10, 2021 00:00:25").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function () {
