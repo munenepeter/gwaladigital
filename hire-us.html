@@ -137,8 +137,7 @@
             <fieldset class="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm bg-gray-50">
                 <div class="space-y-2 col-span-full lg:col-span-1">
                     <p class="font-medium">Personal Inormation</p>
-                    <p class="text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci fuga autem
-                        eum!
+                    <p class="text-xs">Please fill the form for us to serve you
                     </p>
                 </div>
                 <div class="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
@@ -157,25 +156,32 @@
                         <input id="email" type="email" placeholder="Email"
                             class=" border border-yellow-200 p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900">
                     </div>
-                    <div class="col-span-full">
-                        <label for="address" class="text-sm">Address</label>
-                        <input id="address" type="text" placeholder=""
-                            class=" border border-yellow-200 p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900">
-                    </div>
-                    <div class="col-span-full sm:col-span-2">
+                    <div class="col-span-full sm:col-span-3">
                         <label for="city" class="text-sm">City</label>
                         <input id="city" type="text" placeholder=""
                             class=" border border-yellow-200 p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900">
                     </div>
+
                     <div class="col-span-full sm:col-span-2">
-                        <label for="state" class="text-sm">State / Province</label>
-                        <input id="state" type="text" placeholder=""
-                            class=" border border-yellow-200 p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900">
                     </div>
                     <div class="col-span-full sm:col-span-2">
-                        <label for="zip" class="text-sm">ZIP / Postal</label>
-                        <input id="zip" type="text" placeholder=""
-                            class=" border border-yellow-200 p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900">
+                        <label for="service" class="text-sm">Service</label>
+                        <select
+                            class="border border-yellow-200 p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-green-600 border-gray-300 text-gray-900 appearance-none border-none inline-block py-3 pl-3 pr-8 rounded leading-tight w-full">
+                            <option class="pt-6 text-gray-500">--Select service--</option>
+                            <option>Branding</option>
+                            <option>Digital Marketing</option>
+                            <option>Webdesign</option>
+                            <option>App Development</option>
+                        </select>
+                    </div>
+                    <div class="col-span-full sm:col-span-2">
+                    </div>
+                    <div class="col-span-full">
+                        <label for="address" class="text-sm">Message</label>
+
+                        <textarea id="bio" placeholder=""
+                            class=" border border-yellow-200 p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-yellow-600 border-gray-300 text-gray-900"></textarea>
                     </div>
                 </div>
             </fieldset>
