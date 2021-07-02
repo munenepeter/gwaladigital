@@ -23,8 +23,8 @@
 
 <body>
     <!-- Start NavBar -->
-    <header class="text-gray-600 body-font sticky top-0 bg-yellow-500"> 
-        <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
+    <header class="text-gray-600 body-font sticky top-0 bg-yellow-500 z-50"> 
+        <div class="container mx-auto flex flex-wrap  flex-col md:flex-row items-center">
             <a class="hidden lg:flex title-font font-medium items-center text-gray-900  md:mb-0">
                 <img class="w-28 h-16" src="assets/GwalaLogo-Png.png" alt="Gwala Digital Logo">
             </a>
@@ -92,24 +92,18 @@
                 </div>
             </nav>
             <a href="hire-us.html"
-                class="hidden md:inline-flex   lg:inline-flex items-center bg-yellow-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Hire
+                class="hidden md:inline-flex lg:inline-flex items-center bg-yellow-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Hire
                 Us
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    class="w-4 h-4 ml-1 animate-ping" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
             </a>
         </div>
     </header>
-
-
     <!-- End Navbar -->
     <!-- ********************************************************************************************** -->
     <!-- Start Hero Section -->
     <header class="h-full flex justify-between w-full bg-gray-600 bg-cover bg-blend-overlay"
-        style="background-image: url('https://images.pexels.com/photos/3183127/pexels-photo-3183127.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');">
+        style="height: 90vh; background-image: url('https://images.pexels.com/photos/3183127/pexels-photo-3183127.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');">
         <!-- Main div -->
-        <div class="lg:2/6 xl:w-2/4 mt-8 lg:mb-28 lg:mt-28  lg:ml-12 lg:text-left text-center  items-center">
+        <div class="xl:w-2/4 mt-8 lg:mb-28 lg:mt-28  lg:ml-12 lg:text-left text-center  items-center">
             <div
                 class=" text-4xl lg:text-6xl font-semibold text-white leading-none text-center md:text-left lg:text-left">
                 We Bridge Brands’ Now To The Future </div>
@@ -121,8 +115,7 @@
                 Hire Us
             </button>
         </div>
-        <!--  -->
-        <div class="hidden   lg:inline-flex md:hidden mr-20 lg:mb-24 lg:mt-20 lg:mr-52 text-left ">
+        <div class="hidden lg:inline-flex md:hidden mr-20 lg:mb-24 lg:mt-20 lg:mr-52 text-left ">
             <div class="rounded-full h-72 w-80 p-1 bg-gradient-to-r  from-yellow-300 to-transparent">
                 <img class="h-72 w-full rounded-full"
                     src="https://image.freepik.com/free-vector/coding-concept-illustration_114360-859.jpg" alt="">
@@ -134,7 +127,7 @@
 
     <!-- End About us-->
     <!-- ********************************************************************************************** -->
-    <section class=" bg-yellow-100 text-gray-600 body-font">
+    <section class="bg-yellow-100 text-gray-600 body-font">
         <div class="container px-2 py-16 mx-auto">
             <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
@@ -255,7 +248,7 @@
                     </div>
                 </div>
             </div>
-            <button
+            <button id="to-all-services"
                 class="flex mx-auto mt-10 text-white bg-yellow-500 border-0 py-2 px-10 focus:outline-none hover:bg-yellow-600 rounded text-lg">Get
                 All</button>
         </div>
@@ -274,34 +267,34 @@
         <div class="text-gray-600 ">
             <div class="container px-5 py-8 mx-auto">
                 <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center mySlides fade">
-                    <p class="leading-relaxed text-lg">Demo text1 Demo text1 Demo text1 Demo text1 Demo text1 Demo
+                    <p class="leading-relaxed text-lg font-medium text-yellow-700">Demo text1 Demo text1 Demo text1 Demo text1 Demo text1 Demo
                         text1
                         Demo text1 Demo text1 Demo text1 Demo text1 Demo text1 Demo text1 Demo text1 Demo text1 Demo
                         text
                         Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
                         text</p>
                     <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
-                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Demo Client1</h2>
+                    <h2 class="text-gray-900 font-semibold  title-font tracking-wider text-sm">Demo Client1</h2>
                 </div>
                 <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center mySlides fade">
-                    <p class="leading-relaxed text-lg">Demo text2 Demo text Demo text Demo text Demo text Demo
+                    <p class="leading-relaxed text-lg font-medium  text-yellow-700">Demo text2 Demo text Demo text Demo text Demo text Demo
                         text2
                         Demo text2 Demo text2 Demo text2 Demo text2 Demo text Demo text Demo text Demo text Demo
                         text
                         Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
                         text</p>
                     <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
-                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Demo Client2</h2>
+                    <h2 class="text-gray-900  font-semibold  title-font tracking-wider text-sm">Demo Client2</h2>
                 </div>
                 <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center mySlides fade">
-                    <p class="leading-relaxed text-lg">Demo text Demo text Demo text Demo text Demo text Demo
+                    <p class="leading-relaxed text-lg font-medium text-yellow-700">Demo text Demo text Demo text Demo text Demo text Demo
                         text
                         Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
                         text
                         Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo text Demo
                         text</p>
                     <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
-                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Demo Client3</h2>
+                    <h2 class="text-gray-900 font-semibold   title-font tracking-wider text-sm">Demo Client3</h2>
                 </div>
                 <div style="text-align:center">
                     <span class="dot"></span>
